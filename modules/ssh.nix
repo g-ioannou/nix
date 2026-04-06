@@ -6,6 +6,9 @@
       enable = true;
       enableDefaultConfig = false;
       matchBlocks = {
+        "*" = {
+          identityAgent = "~/.bitwarden-ssh-agent.sock";
+        };
         "github.com" = {
           user = "git";
           identityFile = "~/.ssh/github";
