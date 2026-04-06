@@ -24,6 +24,10 @@
           exec start-hyprland
         fi
       '';
+      oh-my-zsh = {
+        enable = true;
+        plugins = [ "git" ];
+      };
       shellAliases = {
         update = "sudo nixos-rebuild switch --flake path:${config.home.homeDirectory}/.nixos-dotfiles#${osConfig.networking.hostName}";
         hi = "echo 'hello!'";
