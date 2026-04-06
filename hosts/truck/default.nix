@@ -23,7 +23,7 @@ in
           useUserPackages = true;
           backupFileExtension = "backup";
           extraSpecialArgs = {
-            inherit (inputs) claude-code noctalia;
+            inherit (inputs) claude-code noctalia zen-browser firefox-addons;
             inherit homeModules;
           };
           users.george = { ... }: {

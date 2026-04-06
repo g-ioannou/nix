@@ -8,6 +8,7 @@
   home.stateVersion = "25.11";
 
 
+  xsession.numlock.enable = true;
   home.packages = with pkgs; [
     claude-code
     brightnessctl
@@ -24,7 +25,8 @@
     kanata
     zoxide
     bitwarden
+    zen-browser
   ];
 
-  features = lib.genAttrs [ "starship" "git" "ssh" "zsh" "noctalia" "cursor" "kanata" "zoxide" "bitwarden" ] (_: { enable = true; });
+  features = lib.genAttrs [ "starship" "git" "ssh" "zsh" "noctalia" "cursor" "kanata" "zoxide" "bitwarden" "zen-browser" ] (_: { enable = true; });
 }

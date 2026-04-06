@@ -10,14 +10,21 @@
       ./hardware-configuration.nix
     ];
 
+
+    
+  security.sudo.extraConfig = ''
+    Defaults timestamp_timeout=30
+  '';
+    
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  services.udev.packages = [ pkgs.yubikey-personalization ];
-  services.pcscd.enable = true;
+  # read security key using touch
+  # services.udev.packages = [ pkgs.yubikey-personalization ];
+  # services.pcscd.enable = true;
 
   networking.hostName = "truck"; # Define your hostname.
 
@@ -82,7 +89,7 @@
   boot.kernelModules = [ "uinput" ];
 
   environment.sessionVariables = {
-#    MOZ_ENABLE_WAYLAND = "1";
+    MOZ_ENABLE_WAYLAND = "0";
   };
 
   hardware.bluetooth.enable = true;
