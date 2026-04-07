@@ -17,7 +17,7 @@ in
         ];
       }
       inputs.home-manager.nixosModules.home-manager
-      {
+      ({ config, ... }: {
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
@@ -25,13 +25,14 @@ in
           extraSpecialArgs = {
             inherit (inputs) claude-code noctalia zen-browser firefox-addons;
             inherit homeModules;
+            hostName = config.networking.hostName;
           };
           users.george = { ... }: {
             imports = [ homeModules.hyprland ];
             features.hyprland.enable = true;
           };
         };
-      }
+      })
     ] ++ map (user: ../../users/${user}) users;
   };
 }

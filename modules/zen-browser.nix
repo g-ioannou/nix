@@ -47,12 +47,6 @@
               urls = [
                 {
                   template = "https://search.nixos.org/packages?channel=unstable&query={searchTerms}";
-                  params = [
-                    {
-                      name = "query";
-                      value = "{searchTerms}";
-                    }
-                  ];
                 }
               ];
             };
