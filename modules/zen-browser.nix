@@ -39,6 +39,24 @@
         search = {
           force = true;
           default = "google";
+          engines = {
+            nixpkgs = {
+              name = "nixpkgs";
+              icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+              definedAliases = ["@nx"];
+              urls = [
+                {
+                  template = "https://search.nixos.org/packages?channel=unstable&query={searchTerms}";
+                  params = [
+                    {
+                      name = "query";
+                      value = "{searchTerms}";
+                    }
+                  ];
+                }
+              ];
+            };
+          };
         };
 
         settings = {
