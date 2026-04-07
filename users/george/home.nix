@@ -28,7 +28,7 @@
     zoxide
     bitwarden
     zen-browser
-    dolphin
+    nautilus
     codex
     mimeapps
   ];
@@ -45,7 +45,7 @@
     codex.enable = true;
     kanata.enable = true;
 
-    dolphin.enable = hostName == "truck";
+    nautilus.enable = hostName == "truck";
     noctalia.enable = hostName == "truck";
     mimeapps.enable = hostName == "truck";
   };

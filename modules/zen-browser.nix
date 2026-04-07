@@ -56,6 +56,7 @@
         settings = {
           # Enable userChrome.css (required for noctalia templates)
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+          "browser.translations.automaticallyPopup" = false;
           # Force dark mode for browser UI and web content
           "ui.systemUsesDarkTheme" = 1;
           "layout.css.prefers-color-scheme.content-override" = 0;

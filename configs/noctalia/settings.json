@@ -14,7 +14,7 @@
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "tabler",
+        "iconMode": "system",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
