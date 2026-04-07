@@ -13,6 +13,8 @@
     claude-code
     brightnessctl
     imagemagick
+  ] ++ lib.optionals (hostName == "truck") [
+    onlyoffice-desktopeditors
   ];
 
   imports = with homeModules; [
