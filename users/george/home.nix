@@ -31,6 +31,7 @@
     nautilus
     codex
     mimeapps
+    neovim
   ];
 
   features = {
@@ -44,6 +45,7 @@
     zen-browser.enable = true;
     codex.enable = true;
     kanata.enable = true;
+    neovim.enable = true;
 
     nautilus.enable = hostName == "truck";
     noctalia.enable = hostName == "truck";

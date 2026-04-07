@@ -1,0 +1,4 @@
+/home/george/.nixos-dotfiles/configs/nvim/init.lua:1:1,18,Entry point for Neovim config: bootstraps lazy.nvim plugin manager and loads options/keymaps/plugins
+/home/george/.nixos-dotfiles/configs/nvim/lua/options.lua:1:1,11,Neovim editor options: line numbers, tab settings, colors, and window split behavior
+/home/george/.nixos-dotfiles/configs/nvim/lua/keymaps.lua:1:1,10,Keymaps: leader key set to space, oil.nvim file explorer toggle on <leader>b, close window on <C-q>
+/home/george/.nixos-dotfiles/configs/nvim/lua/plugins/init.lua:1:1,33,Plugin list for lazy.nvim: treesitter, 99 (AI code search with Claude), lualine, oil.nvim file explorer, rose-pine colorscheme
