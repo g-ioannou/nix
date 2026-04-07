@@ -30,6 +30,7 @@
     zen-browser
     dolphin
     codex
+    mimeapps
   ];
 
   features = {
@@ -46,5 +47,6 @@
 
     dolphin.enable = hostName == "truck";
     noctalia.enable = hostName == "truck";
+    mimeapps.enable = hostName == "truck";
   };
 }
